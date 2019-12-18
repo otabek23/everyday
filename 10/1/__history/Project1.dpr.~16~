@@ -1,0 +1,64 @@
+program Project1;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  System.SysUtils;
+
+var
+  // Определение статического массива
+  wordArray  : Array[Word] of Integer;     // Статический, размер=High (Word)
+  multiArray : Array[Byte, 1..5] of char;  // Статический массив, 2 измерения
+  rangeArray : Array[5..20] of string;     // Статический массив, размер = 16
+
+  i,q,j,k : Integer;
+  s : string;
+begin
+// Показ размеров и диапазоны этих массивов
+writeln('Длина wordArray = '+IntToStr(Length(wordArray)));
+writeln('Самый маленький элемент wordArray = '+IntToStr(Low(wordArray)));
+writeln('Самый большой элемент wordArray = '+IntToStr(High(wordArray)));
+writeln('Длина multiArray = '+IntToStr(Length(multiArray)));
+writeln('Самый маленький элемент multiArray = '+IntToStr(Low(multiArray)));
+writeln('Самый большой элемент multiArray = '+IntToStr(High(multiArray)));
+writeln('Длина rangeArray = '+IntToStr(Length(rangeArray)));
+writeln('Самый маленький элемент rangeArray = '+IntToStr(Low(rangeArray)));
+writeln('Самый большой элемент rangeArray = '+IntToStr(High(rangeArray)));
+writeln('');
+
+// Полный диапазон статического массива доступен до назначения,
+// но значения будет непредсказуемо
+for i := 1 to 10 do begin
+  k := 9;
+  rangeArray[i] := k+q;
+  q := 4;
+  Inc(k, q)
+
+end;
+
+
+
+
+writeln('wordArray элемент 7 = '+IntToStr(wordArray[7]));
+writeln('wordArray элемент 20 = '+IntToStr(wordArray[20]));
+
+
+
+
+
+
+// Использование индексации для заполнения массива
+for i := 5 to 20 do
+  rangeArray[i] := IntToStr(i + 5);
+for i := 5 to 20 do begin
+  s := s + rangeArray[i] + ' ';
+end;
+
+// Теперь используем индексацию для отображения 2-х элементов
+writeln(s);
+writeln('rangeArray элемент 20 = '+rangeArray[20]);
+
+readln;
+end.

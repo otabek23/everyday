@@ -1,0 +1,54 @@
+program Project1;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  System.SysUtils;
+
+var
+  // Определение статического массива
+  wordArray  : Array[Word] of Integer;     // Статический, размер=High (Word)
+  multiArray : Array[Byte, 1..5] of char;  // Статический массив, 2 измерения
+  rangeArray : Array[5..20] of string;     // Статический массив, размер = 16
+
+  i,q,j,k : Integer;
+  s : string;
+begin
+k := 9;
+q := 4;
+wordArray[1] := k;
+for i := 2 to 10 do begin
+
+  wordArray[i] := k+q;
+
+  Inc(k, q)
+
+end;
+
+
+for i := 1 to 10 do begin
+  s := s + IntToStr(wordArray[i]) + ' ';
+end;
+
+// Теперь используем индексацию для отображения 2-х элементов
+writeln(s);
+
+
+
+
+
+// Использование индексации для заполнения массива
+for i := 5 to 20 do
+  rangeArray[i] := IntToStr(i + 5);
+for i := 5 to 20 do begin
+  s := s + rangeArray[i] + ' ';
+end;
+
+// Теперь используем индексацию для отображения 2-х элементов
+writeln(s);
+writeln('rangeArray элемент 20 = '+rangeArray[20]);
+
+readln;
+end.
