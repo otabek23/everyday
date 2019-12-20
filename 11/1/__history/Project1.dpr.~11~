@@ -1,0 +1,29 @@
+program Project1;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  System.Math, System.SysUtils;
+
+var
+stoimost : array[1..20] of Integer;
+min,max,i,j,k: Integer;
+s:string;
+
+begin
+Randomize;
+for i := 1 to 20 do begin
+  stoimost[i] := RandomRange(15,75) * 1000;
+  s := s+IntToStr(stoimost[i])+' ';
+
+end;
+
+Writeln('Стоимость конфет: ',s);
+
+
+max:=stoimost[1];
+
+Readln;
+end.
