@@ -25,13 +25,11 @@ Randomize;
 writeln('Дан массив: [ ',s,']');
 writeln('Его первый элемент рвен: ',massiv[1]{:3:0});
 
+massiv[1] := p;
+g := (massiv[2]/massiv[1]);
 
-for i := 2 to 10 do begin
-  g := massiv[i]/massiv[1];
-  ss := ss + FloatToStrF(g, ffGeneral, 4,5)+ ' ';
 
-end;
-writeln('Если поделить первый элемент массива на остальные получится: ',ss);
+
 
 readln;
 end.
