@@ -1,0 +1,57 @@
+program Project1;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  System.SysUtils, System.Math;
+
+var
+massiv: array[1..15] of integer;
+i,a,b,r,j,n:integer;
+s:string;
+
+
+begin
+Randomize;
+for i := 1 to 15 do begin
+  massiv[i] := RandomRange(20,99);
+  s := s + IntToStr(massiv[i])+ ' ';
+
+end;
+write('Массив состоит из этих элементов: ',s);
+
+n:=6;
+a:=2;
+b:=10;
+repeat
+writeln(n,' ',b,' ',a);
+r := massiv[n];
+massiv[n] := massiv[b];
+massiv[b] := r;
+
+
+
+n := n+1;
+b := b-1;
+until (n>=9);
+
+
+//a := massiv[2];
+//massiv[2] := massiv[9];
+//massiv[9] := a;
+
+
+
+
+s := '';
+writeln(s);
+for i := 1 to 15 do begin
+  s := s + inttostr(massiv[i]) + ' ';
+end;
+
+writeln('Переделанный массив:              ',s);
+writeln('Нумерация массива:                1  2  3  4  5  6  7  8  9  10 11 12 13 14 15');
+readln;
+end.
