@@ -1,0 +1,115 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  VertScrollBar.Style = ssFlat
+  Align = alClient
+  BorderStyle = bsSingle
+  Caption = #1050#1072#1083#1100#1082#1091#1083#1103#1090#1086#1088
+  ClientHeight = 405
+  ClientWidth = 315
+  Color = clHighlightText
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Scaled = False
+  Visible = True
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 315
+    Width = 315
+    Height = 90
+    Align = alBottom
+    Color = clInactiveCaption
+    Enabled = False
+    Locked = True
+    ParentBackground = False
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 0
+    ExplicitTop = 305
+    ExplicitWidth = 305
+    object Edit1: TEdit
+      Left = 8
+      Top = 6
+      Width = 105
+      Height = 21
+      NumbersOnly = True
+      TabOrder = 0
+      Text = '0'
+    end
+    object Edit2: TEdit
+      Left = 8
+      Top = 55
+      Width = 105
+      Height = 21
+      NumbersOnly = True
+      TabOrder = 1
+      Text = '0'
+    end
+    object Plus: TButton
+      Left = 143
+      Top = 6
+      Width = 62
+      Height = 35
+      Caption = '+'
+      TabOrder = 2
+      OnClick = PlusClick
+    end
+    object Minus: TButton
+      Left = 211
+      Top = 6
+      Width = 62
+      Height = 34
+      Caption = '-'
+      TabOrder = 3
+      OnClick = MinusClick
+    end
+    object Button3: TButton
+      Left = 143
+      Top = 47
+      Width = 62
+      Height = 33
+      Caption = '*'
+      TabOrder = 4
+      OnClick = Button3Click
+    end
+    object Button4: TButton
+      Left = 211
+      Top = 46
+      Width = 62
+      Height = 35
+      Caption = '/'
+      TabOrder = 5
+      OnClick = Button4Click
+    end
+  end
+  object memo1: TMemo
+    Left = 0
+    Top = 0
+    Width = 315
+    Height = 315
+    Align = alClient
+    Enabled = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Roboto Cn'
+    Font.Style = []
+    HideSelection = False
+    Lines.Strings = (
+      '/')
+    ParentFont = False
+    ParentShowHint = False
+    ScrollBars = ssVertical
+    ShowHint = True
+    TabOrder = 1
+    WantTabs = True
+    ExplicitWidth = 305
+    ExplicitHeight = 305
+  end
+end

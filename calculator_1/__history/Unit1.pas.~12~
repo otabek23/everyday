@@ -1,0 +1,102 @@
+unit Unit1;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls;
+
+type
+  TForm1 = class(TForm)
+    Panel1: TPanel;
+    Edit1: TEdit;
+    Edit2: TEdit;
+    Plus: TButton;
+    Minus: TButton;
+    Button3: TButton;
+    Button4: TButton;
+    memo1: TMemo;
+    procedure PlusClick(Sender: TObject);
+    procedure MinusClick(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
+    procedure Button4Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+    procedure summa(a,b:Integer);
+    procedure raznost(a,b:Integer);
+    procedure umnoj(a,b:Integer);
+    procedure deleniye(a,b:Integer);
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+
+
+
+
+procedure TForm1.MinusClick(Sender: TObject);
+begin
+  raznost(StrToInt(Edit1.Text),StrToInt(Edit2.Text));
+end;
+
+procedure TForm1.PlusClick(Sender: TObject);
+begin
+  summa(StrToInt(Edit1.Text),StrToInt(Edit2.Text));
+end;
+
+
+
+
+
+procedure TForm1.summa(a,b:Integer);
+var c:integer;
+begin
+  c:= a+b;
+  memo1.Lines.Add(IntToStr(a)+'+'+IntToStr(b)+'='+IntToStr(c));
+end;
+
+
+procedure TForm1.raznost(a,b:Integer);
+var c:integer;
+begin
+  c:= a-b;
+  memo1.Lines.Add(IntToStr(a)+'-'+IntToStr(b)+'='+IntToStr(c));
+end;
+
+
+procedure TForm1.umnoj(a,b:Integer);
+var c:integer;
+begin
+  c:= a*b;
+  memo1.Lines.Add(IntToStr(a)+'*'+IntToStr(b)+'='+IntToStr(c));
+end;
+
+
+procedure TForm1.Button3Click(Sender: TObject);
+begin
+  umnoj(StrToInt(Edit1.Text),StrToInt(Edit2.Text));
+end;
+
+procedure TForm1.Button4Click(Sender: TObject);
+begin
+  deleniye(StrToInt(Edit1.Text),StrToInt(Edit2.Text));
+end;
+
+procedure TForm1.deleniye(a,b:Integer);
+var c:integer;
+begin
+  c:= a/b;
+  memo1.Lines.Add(IntToStr(a)+'/'+IntToStr(b)+'='+IntToStr(c));
+end;
+
+
+
+
+end.
