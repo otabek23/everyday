@@ -112,7 +112,6 @@ object Form1: TForm1
       Height = 96
       Caption = '='
       TabOrder = 9
-      OnClick = RavnoClick
     end
     object Zero: TButton
       Left = 173

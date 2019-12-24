@@ -39,11 +39,6 @@ type
     procedure EightClick(Sender: TObject);
     procedure NineClick(Sender: TObject);
     procedure ZeroClick(Sender: TObject);
-    procedure PlusClick(Sender: TObject);
-    procedure MinusClick(Sender: TObject);
-    procedure ProizvedeniyeClick(Sender: TObject);
-    procedure DeleniyeClick(Sender: TObject);
-    procedure RavnoClick(Sender: TObject);
 
 
 
@@ -60,8 +55,7 @@ type
 var
   Form1: TForm1;
   a,b,c,s:string;
-  i,j,k:Real;
-  x:char;
+
 implementation
 {$R *.dfm}
 
@@ -79,103 +73,63 @@ end;
 procedure TForm1.CEClick(Sender: TObject);
 begin
   re.Lines.Clear;
+
 end;
 
 
 
-procedure TForm1.ZeroClick(Sender: TObject);
-begin
-  re.Text := re.Text + '0';
-end;
 
-procedure TForm1.OneClick(Sender: TObject);
+procedure TForm1.EightClick(Sender: TObject);
 begin
-  re.Text := re.Text + '1';
-end;
-
-
-procedure TForm1.TwoClick(Sender: TObject);
-begin
-  re.Text := re.Text + '2';
-end;
-
-procedure TForm1.ThreeClick(Sender: TObject);
-begin
-  re.Text := re.Text + '3';
-end;
-
-procedure TForm1.FourClick(Sender: TObject);
-begin
-  re.Text := re.Text + '4';
+re.Text:= re.Text + '8';
 end;
 
 procedure TForm1.FiveClick(Sender: TObject);
 begin
-  re.Text := re.Text + '5';
+re.Text:= re.Text + '5';
 end;
 
-procedure TForm1.SixClick(Sender: TObject);
+procedure TForm1.FourClick(Sender: TObject);
 begin
-  re.Text := re.Text + '6';
-end;
-
-procedure TForm1.SevenClick(Sender: TObject);
-begin
-  re.Text := re.Text + '7';
-end;
-
-procedure TForm1.EightClick(Sender: TObject);
-begin
-  re.Text := re.Text + '8';
+re.Text:= re.Text + '4';
 end;
 
 procedure TForm1.NineClick(Sender: TObject);
 begin
-  re.Text := re.Text + '9';
+re.Text:= re.Text + '9';
 end;
 
-
-procedure TForm1.PlusClick(Sender: TObject);
+procedure TForm1.OneClick(Sender: TObject);
 begin
-  x:='+';
-  k:=StrToFloat(re.Text);
-  re.Lines.Clear;
+  re.Text:=re.Text+'1';
 end;
 
-procedure TForm1.ProizvedeniyeClick(Sender: TObject);
+procedure TForm1.ZeroClick(Sender: TObject);
 begin
-  x:='*';
-  k:=StrToFloat(re.Text);
-  re.Lines.Clear;
+re.Text:= re.Text + '0';
 end;
 
-
-procedure TForm1.DeleniyeClick(Sender: TObject);
+procedure TForm1.SevenClick(Sender: TObject);
 begin
-  x:='/';
-  k:=StrToFloat(re.Text);
-  re.Lines.Clear;
+re.Text:= re.Text + '7';
 end;
 
-procedure TForm1.MinusClick(Sender: TObject);
+procedure TForm1.SixClick(Sender: TObject);
 begin
-  x:='-';
-  k:=StrToFloat(re.Text);
-  re.Lines.Clear;
+re.Text:= re.Text + '6';
 end;
 
-procedure TForm1.RavnoClick(Sender: TObject);
-
+procedure TForm1.ThreeClick(Sender: TObject);
 begin
-  j:=StrToFloat(re.Text);
-  case x of
-  '+': i:= k+j;
-  '-': i:= k-j;
-  '*': i:= k*j;
-  '/': i:= k/j;
-  end;
-  re.Text:=FloatTostr(i);
+re.Text:= re.Text + '3';
 end;
+
+procedure TForm1.TwoClick(Sender: TObject);
+begin
+re.Text:= re.Text + '2';
+end;
+
+
 
 
 

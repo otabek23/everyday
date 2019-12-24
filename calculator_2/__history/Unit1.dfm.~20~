@@ -31,7 +31,6 @@ object Form1: TForm1
       Height = 40
       Caption = '6'
       TabOrder = 0
-      OnClick = SixClick
     end
     object Four: TButton
       Left = 5
@@ -40,7 +39,6 @@ object Form1: TForm1
       Height = 40
       Caption = '4'
       TabOrder = 1
-      OnClick = FourClick
     end
     object Five: TButton
       Left = 61
@@ -49,7 +47,6 @@ object Form1: TForm1
       Height = 40
       Caption = '5'
       TabOrder = 2
-      OnClick = FiveClick
     end
     object Three: TButton
       Left = 117
@@ -58,7 +55,6 @@ object Form1: TForm1
       Height = 40
       Caption = '3'
       TabOrder = 3
-      OnClick = ThreeClick
     end
     object Two: TButton
       Left = 61
@@ -67,7 +63,6 @@ object Form1: TForm1
       Height = 40
       Caption = '2'
       TabOrder = 4
-      OnClick = TwoClick
     end
     object One: TButton
       Left = 5
@@ -76,7 +71,6 @@ object Form1: TForm1
       Height = 40
       Caption = '1'
       TabOrder = 5
-      OnClick = OneClick
     end
     object Eight: TButton
       Left = 61
@@ -85,7 +79,6 @@ object Form1: TForm1
       Height = 40
       Caption = '8'
       TabOrder = 6
-      OnClick = EightClick
     end
     object Seven: TButton
       Left = 5
@@ -94,7 +87,6 @@ object Form1: TForm1
       Height = 40
       Caption = '7'
       TabOrder = 7
-      OnClick = SevenClick
     end
     object Nine: TButton
       Left = 117
@@ -103,7 +95,6 @@ object Form1: TForm1
       Height = 40
       Caption = '9'
       TabOrder = 8
-      OnClick = NineClick
     end
     object Ravno: TButton
       Left = 173
@@ -112,7 +103,6 @@ object Form1: TForm1
       Height = 96
       Caption = '='
       TabOrder = 9
-      OnClick = RavnoClick
     end
     object Zero: TButton
       Left = 173
@@ -121,7 +111,6 @@ object Form1: TForm1
       Height = 40
       Caption = '0'
       TabOrder = 10
-      OnClick = ZeroClick
     end
     object Deleniye: TButton
       Left = 173
@@ -130,7 +119,6 @@ object Form1: TForm1
       Height = 40
       Caption = '/'
       TabOrder = 11
-      OnClick = DeleniyeClick
     end
     object Proizvedeniye: TButton
       Left = 117
@@ -139,7 +127,6 @@ object Form1: TForm1
       Height = 40
       Caption = '*'
       TabOrder = 12
-      OnClick = ProizvedeniyeClick
     end
     object Minus: TButton
       Left = 61
@@ -148,7 +135,6 @@ object Form1: TForm1
       Height = 40
       Caption = '-'
       TabOrder = 13
-      OnClick = MinusClick
     end
     object Plus: TButton
       Left = 5
@@ -157,7 +143,6 @@ object Form1: TForm1
       Height = 40
       Caption = '+'
       TabOrder = 14
-      OnClick = PlusClick
     end
     object Button11: TButton
       Left = 229
@@ -177,19 +162,25 @@ object Form1: TForm1
       TabOrder = 16
       OnClick = CEClick
     end
-    object RE: TRichEdit
-      Left = 5
-      Top = 32
-      Width = 308
-      Height = 64
-      Font.Charset = RUSSIAN_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 17
-      Zoom = 100
-    end
+  end
+  object RE: TRichEdit
+    Left = 0
+    Top = 0
+    Width = 320
+    Height = 71
+    Align = alTop
+    Alignment = taRightJustify
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -27
+    Font.Name = 'Microsoft YaHei UI'
+    Font.Style = []
+    Lines.Strings = (
+      'Gargamle 23')
+    ParentFont = False
+    ReadOnly = True
+    ScrollBars = ssVertical
+    TabOrder = 1
+    Zoom = 100
   end
 end

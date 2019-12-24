@@ -40,10 +40,6 @@ type
     procedure NineClick(Sender: TObject);
     procedure ZeroClick(Sender: TObject);
     procedure PlusClick(Sender: TObject);
-    procedure MinusClick(Sender: TObject);
-    procedure ProizvedeniyeClick(Sender: TObject);
-    procedure DeleniyeClick(Sender: TObject);
-    procedure RavnoClick(Sender: TObject);
 
 
 
@@ -80,7 +76,6 @@ procedure TForm1.CEClick(Sender: TObject);
 begin
   re.Lines.Clear;
 end;
-
 
 
 procedure TForm1.ZeroClick(Sender: TObject);
@@ -141,42 +136,6 @@ begin
   k:=StrToFloat(re.Text);
   re.Lines.Clear;
 end;
-
-procedure TForm1.ProizvedeniyeClick(Sender: TObject);
-begin
-  x:='*';
-  k:=StrToFloat(re.Text);
-  re.Lines.Clear;
-end;
-
-
-procedure TForm1.DeleniyeClick(Sender: TObject);
-begin
-  x:='/';
-  k:=StrToFloat(re.Text);
-  re.Lines.Clear;
-end;
-
-procedure TForm1.MinusClick(Sender: TObject);
-begin
-  x:='-';
-  k:=StrToFloat(re.Text);
-  re.Lines.Clear;
-end;
-
-procedure TForm1.RavnoClick(Sender: TObject);
-
-begin
-  j:=StrToFloat(re.Text);
-  case x of
-  '+': i:= k+j;
-  '-': i:= k-j;
-  '*': i:= k*j;
-  '/': i:= k/j;
-  end;
-  re.Text:=FloatTostr(i);
-end;
-
 
 
 

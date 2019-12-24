@@ -43,7 +43,6 @@ type
     procedure MinusClick(Sender: TObject);
     procedure ProizvedeniyeClick(Sender: TObject);
     procedure DeleniyeClick(Sender: TObject);
-    procedure RavnoClick(Sender: TObject);
 
 
 
@@ -149,7 +148,6 @@ begin
   re.Lines.Clear;
 end;
 
-
 procedure TForm1.DeleniyeClick(Sender: TObject);
 begin
   x:='/';
@@ -164,18 +162,7 @@ begin
   re.Lines.Clear;
 end;
 
-procedure TForm1.RavnoClick(Sender: TObject);
 
-begin
-  j:=StrToFloat(re.Text);
-  case x of
-  '+': i:= k+j;
-  '-': i:= k-j;
-  '*': i:= k*j;
-  '/': i:= k/j;
-  end;
-  re.Text:=FloatTostr(i);
-end;
 
 
 

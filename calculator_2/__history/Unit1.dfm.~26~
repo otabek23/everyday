@@ -112,7 +112,6 @@ object Form1: TForm1
       Height = 96
       Caption = '='
       TabOrder = 9
-      OnClick = RavnoClick
     end
     object Zero: TButton
       Left = 173
@@ -130,7 +129,6 @@ object Form1: TForm1
       Height = 40
       Caption = '/'
       TabOrder = 11
-      OnClick = DeleniyeClick
     end
     object Proizvedeniye: TButton
       Left = 117
@@ -139,7 +137,6 @@ object Form1: TForm1
       Height = 40
       Caption = '*'
       TabOrder = 12
-      OnClick = ProizvedeniyeClick
     end
     object Minus: TButton
       Left = 61
@@ -148,7 +145,6 @@ object Form1: TForm1
       Height = 40
       Caption = '-'
       TabOrder = 13
-      OnClick = MinusClick
     end
     object Plus: TButton
       Left = 5
