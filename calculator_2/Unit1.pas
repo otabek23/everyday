@@ -68,12 +68,12 @@ implementation
 procedure TForm1.Button11Click(Sender: TObject);
 var i,len:integer;s:string;
 begin
-  a:=re.Lines.Text;
   s := re.text;
   len := length(s);
-  delete(a,len,len);
-  re.Lines.Clear;
-  re.Text := a;
+  delete(s,len,len);
+  re.Text := s;
+//  ShowMessage(IntToStr(len));
+//  if len<2 then re.Clear;
 end;
 
 procedure TForm1.CEClick(Sender: TObject);

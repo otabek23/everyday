@@ -2,7 +2,7 @@ object Form1: TForm1
   Left = 0
   Top = 0
   BorderStyle = bsSingle
-  Caption = 'Form1'
+  Caption = #1050#1072#1083#1100#1082#1091#1083#1103#1090#1086#1088
   ClientHeight = 289
   ClientWidth = 320
   Color = clBtnFace
@@ -184,10 +184,11 @@ object Form1: TForm1
       Height = 64
       Font.Charset = RUSSIAN_CHARSET
       Font.Color = clWindowText
-      Font.Height = -11
-      Font.Name = 'Tahoma'
+      Font.Height = -27
+      Font.Name = 'Microsoft YaHei UI'
       Font.Style = []
       ParentFont = False
+      ReadOnly = True
       TabOrder = 17
       Zoom = 100
     end
