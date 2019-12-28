@@ -1,0 +1,20 @@
+program n2;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  System.SysUtils;
+
+var
+n,a,b,c,d:integer;
+begin
+  write('¬ведите 4-х значное число: ');
+  readln(n);
+  a:= n div 1000;
+  writeln(a);
+
+
+Readln;
+end.

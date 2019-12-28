@@ -1,0 +1,18 @@
+program n1;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  System.SysUtils;
+var
+chislo,a,b,c:integer;
+begin
+  write('¬ведите двузначное число: ');
+  Readln(chislo);
+  a:= chislo mod 10;
+  b:= chislo div 10
+  writeln(a);
+  readln;
+end.

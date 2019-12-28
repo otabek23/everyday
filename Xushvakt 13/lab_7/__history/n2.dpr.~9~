@@ -1,0 +1,31 @@
+program n2;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  System.SysUtils;
+
+var
+n,a,b,c,d:integer;
+begin
+  write('¬ведите 4-х значное число: ');
+  readln(n);
+  a:= n div 1000;
+  b:= (n div 100)mod 10;
+  c:= (n mod 100)div 10;
+  d:= n mod 10;
+
+
+  if (a=b) or (c=d) then begin
+    if (a=c) or (b=d) then begin
+      writeln('”тверждение верно, в числе есть 3 одинаковых цифр');
+    end;
+
+  end else Writeln('3 одинаковы цифр в этом числе нету');
+
+
+
+Readln;
+end.
