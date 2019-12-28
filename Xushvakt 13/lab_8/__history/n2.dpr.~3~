@@ -1,0 +1,21 @@
+program n2;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  System.SysUtils;
+
+var
+i,n:integer;
+begin
+
+
+n:= 3 mod 2;
+Writeln(n);
+
+
+
+readln;
+end.
