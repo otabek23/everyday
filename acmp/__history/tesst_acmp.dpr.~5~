@@ -1,0 +1,16 @@
+program tesst_acmp;
+{$APPTYPE CONSOLE}
+uses
+  System.SysUtils;
+
+var a, i, c : Integer;
+
+begin
+  Assign(Input,'input.txt'); Reset(Input);
+  Assign(Output,'output.txt'); Rewrite(Output);
+  Read(a);
+  for i := 1 to a do begin
+    c:=c+i;
+  end;
+  Write(c);
+end.
